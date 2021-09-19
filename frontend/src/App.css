@@ -1,0 +1,51 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notice{
+  height: 20vh;
+  overflow-y: scroll;
+}
+.chat{
+  height: 70vh;
+  background-color: #ddd;
+  padding: 3px;
+  overflow-y: scroll;
+}
+.message{
+  padding: 5px;
+  width: fit-content;
+  margin-top: 5px;
+  color: white;
+  background-color: rgb(46, 46, 46);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: left; */
+
+  border-radius: 5px;
+}
+.messageSender{
+  position: fixed;
+  width: 100%;
+}
+.messageSender input{
+  height: 25px;
+  width: 250px;
+}
+.messageSender button{
+  padding: 5px;
+}
+.time{
+  font-size: 11px;
+}
+
+
+
+
+@media screen and (max-width: 350px) {
+  .chat{
+    min-width: 300px;
+  }
+}
